@@ -8,6 +8,11 @@ namespace Desafio.GitHub.Domain.ValueObjects
     {
         public readonly bool RepositorioFavoritadoComSucesso;
 
+        public FavoritarRepositorioRetornoVo()
+        {
+
+        }
+
         public FavoritarRepositorioRetornoVo(bool erro, string mensagemErro)
         {
             Erro = erro;

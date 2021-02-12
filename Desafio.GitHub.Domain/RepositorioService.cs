@@ -73,7 +73,7 @@ namespace Desafio.GitHub.Domain
                 return new FavoritarRepositorioRetornoVo(erro: true, mensagemErro: resultadoListarRepositoriosFavoritados.MensagemErro);
             }
 
-            var repositorioJaFoiFavoritados = ListarRepositoriosFavoritados().RepositoriosFavoritados.Where(p => p.Id == id).Any();
+            var repositorioJaFoiFavoritados = resultadoListarRepositoriosFavoritados.RepositoriosFavoritados.Where(p => p.Id == id).Any();
 
             if (repositorioJaFoiFavoritados == true)
             {
