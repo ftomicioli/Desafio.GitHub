@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Versioning" Version="5.0.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.0.4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Desafio.GitHub.Application\Desafio.GitHub.Application.csproj" />
+    <ProjectReference Include="..\Desafio.GitHub.Facade\Desafio.GitHub.Facade.csproj" />
+    <ProjectReference Include="..\Desafio.GitHub.Integration.Http\Desafio.GitHub.Integration.Http.csproj" />
+  </ItemGroup>
+
+
+</Project>
