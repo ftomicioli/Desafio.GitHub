@@ -11,7 +11,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Desafio.GitHub.Application\Desafio.GitHub.Application.csproj" />
-    <ProjectReference Include="..\Desafio.GitHub.Facade\Desafio.GitHub.Facade.csproj" />
     <ProjectReference Include="..\Desafio.GitHub.Integration.Http\Desafio.GitHub.Integration.Http.csproj" />
   </ItemGroup>
 
