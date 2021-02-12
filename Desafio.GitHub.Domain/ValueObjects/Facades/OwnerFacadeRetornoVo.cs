@@ -4,9 +4,8 @@ using System.Text;
 
 namespace Desafio.GitHub.Domain.ValueObjects.Facades
 {
-    public class ListarRepositoriosFacadeRetornoVo 
+    public class OwnerFacadeRetornoVo
     {
-        public long Id { get; set; }
-        public string Name { get; set; }
+        public string login { get; set; }
     }
 }

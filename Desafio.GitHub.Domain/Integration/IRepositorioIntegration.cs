@@ -5,6 +5,6 @@ namespace Desafio.GitHub.Domain.Integration
 {
     public interface IRepositorioIntegration
     {
-        List<ListarRepositoriosFacadeRetornoVo> ListarRepositorios();
+        List<RepoFacadeRetornoVo> ListarRepositorios();
     }
 }

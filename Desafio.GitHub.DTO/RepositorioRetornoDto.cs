@@ -9,6 +9,10 @@ namespace Desafio.GitHub.DTO
     {
         public long Id { get; set; }
         public string Name { get; set; }
+        public string Description { get; set; }
+        public string Language { get; set; }
+        public DateTime Updated_At { get; set; }
+        public string Dono { get; set; }
 
         public static explicit operator RepositorioRetornoDto(RepositoriosRetornoVo v)
         {
@@ -18,7 +22,11 @@ namespace Desafio.GitHub.DTO
             return new RepositorioRetornoDto
             {
                 Id = v.Id,
-                Name = v.Name
+                Name = v.Name,
+                Description = v.Description,
+                Language = v.Language,
+                Updated_At = v.Updated_At,
+                Dono = v.Dono
             };
         }
     }

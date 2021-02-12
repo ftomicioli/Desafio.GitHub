@@ -16,9 +16,9 @@ namespace Desafio.GitHub.Integration.Http
             _apiSettings = apiSettings.Value;
         }
 
-        public List<ListarRepositoriosFacadeRetornoVo> ListarRepositorios()
+        public List<RepoFacadeRetornoVo> ListarRepositorios()
         {
-            List<ListarRepositoriosFacadeRetornoVo> result = HttpHelper<List<ListarRepositoriosFacadeRetornoVo>>.HttpRequest($"{_apiSettings.UrlRepositorioGitHub}/repos", method: CustomHttpVerbs.Get);
+            List<RepoFacadeRetornoVo> result = HttpHelper<List<RepoFacadeRetornoVo>>.HttpRequest($"{_apiSettings.UrlRepositorioGitHub}/repos", method: CustomHttpVerbs.Get);
             return result;
         }
     }
